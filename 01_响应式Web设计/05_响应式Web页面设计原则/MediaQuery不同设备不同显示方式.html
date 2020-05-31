@@ -1,0 +1,24 @@
+<!-- 通过媒体查询（Media queries），您可以根据各种设备特征和参数的值或者是否存在来调整您的网站或应用。
+
+它们是响应式设计的关键组成部分。 例如，媒体查询可以缩小小型设备上的字体大小，在纵向模式下查看页面时增加段落之间的填充，或者增加触摸屏上按钮的大小。
+
+在 CSS 中，使用 @media at-rule 根据媒体查询的结果有条件地应用样式表的一部分。 使用 @import 有条件地应用整个样式表。 -->
+
+<style>
+    p {
+      font-size: 20px;
+    }
+  
+    /* Only change code below this line */
+    /* media后面加上判断条件，花括号内则加上需要更改的内容 */
+    @media (max-height: 800px){
+        p {
+            font-size: 10px;
+        }
+    }
+    
+    /* Only change code above this line */
+  </style>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>
+  

@@ -1,0 +1,22 @@
+<!--HTML的每个元素都是一个盒子，称之为CSS Box模型
+每一个盒子都会在新的一行开始（比如段落、标题、divs），正是一个标准的flow
+但CSS也提供position属性来覆盖这个，当我们将一个元素的位置设置为 relative
+它允许你将目前文本的flow修改，同时提供left、right、top、bottom几个属性
+也就是说，relative位置是相对于自己的box的，相当于一个padding
+---------------------------------------
+Change the position of the h2 to relative,
+and use a CSS offset to move it 15 pixels away from the top of where it sits in the normal flow.
+Notice there is no impact on the positions of the surrounding h1 and p elements.
+-->
+
+<style>
+    h2 {
+        position: relative;
+        top: 15px;
+    }
+</style>
+<body>
+<h1>On Being Well-Positioned</h1>
+<h2>Move me!</h2>
+<p>I still think the h2 is where it normally sits.</p>
+</body>

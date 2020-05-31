@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary Wu's Tribute Page</title>
+</head>
+<style>
+    .container{
+        background-color: antiquewhite;
+    }
+
+
+    #title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    img {
+      height:auto;
+      width: 98%;
+      padding: 10px;
+    }
+
+    #caption{
+        font-family:  Helvetica;
+        margin: 20px;
+    }
+
+    #article{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 60%;
+    }
+
+    #article_title{
+        margin: auto;
+    }
+
+    li{
+        margin: auto 10px 10px auto;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class='container'>
+        <header id="title">
+            <h1> Dr.Norman Borlaug</h1>
+            <p>The man who saved a billion lives.</p>
+        </header>
+
+        <figure>
+            <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" alt="Dr. Norman Borlaug.">
+            <figcaption id="caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+        </figure>
+
+        <section id='article'>
+            <h3 id='article_title'>Here's a time line of Dr. Borlaug's life:</h3>
+            <ul>
+                <li><b>1914</b> - Born in Cresco, Iowa</li>
+                <li><b>1933</b> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
+                <li><b>1935</b> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
+            </ul>
+    
+        </section>
+
+        <footer>If you have time, you should read more about this incredible human being on his <a href="">Wikipedia entry.</a></footer>
+    </div>
+    
+</body>
+</html>

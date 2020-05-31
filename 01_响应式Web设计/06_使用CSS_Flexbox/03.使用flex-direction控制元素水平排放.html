@@ -1,0 +1,29 @@
+<!-- 可以通过添加 flex-direction 来控制子元素是否是水平排放 -->
+
+<style>
+    /* TODO:Add the CSS property flex-direction to the #box-container element, and give it a value of row-reverse. */
+    #box-container {
+      display: flex;
+      height: 500px;
+      /* 子元素将水平逆向排放 */
+      flex-direction: row-reverse;
+  
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 50%;
+      height: 50%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+  

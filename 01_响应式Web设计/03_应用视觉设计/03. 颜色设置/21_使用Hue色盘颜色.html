@@ -1,0 +1,43 @@
+<!--
+使用HUE颜色来设置颜色，饱和度和亮度
+hsl中第一个参数是颜色，基于的是色盘上的角度（0~360）
+第二个是饱和度saturation，100%表示没有灰色，0%代表是灰色
+第三个是亮度lightness表示含有白色的程度，50%是原始色彩
+red	    hsl(0, 100%, 50%)
+yellow	hsl(60, 100%, 50%)
+green	hsl(120, 100%, 50%)
+cyan	hsl(180, 100%, 50%)
+blue	hsl(240, 100%, 50%)
+magenta	hsl(300, 100%, 50%)
+--------------------------------------------------
+Change the background-color of each div element based on the class names (green, cyan, or blue)
+using hsl(). All three should have full saturation and normal lightness.
+-->
+
+<style>
+    body {
+        background-color: #FFFFFF;
+    }
+
+    .green {
+        background-color: hsl(120,100%,50%);
+    }
+
+    .cyan {
+        background-color: hsl(180,100%,50%);;
+    }
+
+    .blue {
+        background-color: hsl(240,100%,50%);
+    }
+
+    div {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+<div class="green"></div>
+<div class="cyan"></div>
+<div class="blue"></div>

@@ -1,0 +1,41 @@
+<!--自动调整大小的Margin
+Margin是元素边界到其他元素边界的距离
+如果你想让你的元素根据外部边界来自动调整距离
+可以设置margin距离为-15px-->
+<style>
+    .injected-text {
+        margin-bottom: -25px;
+        text-align: center;
+    }
+
+    .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        text-align: center;
+    }
+
+    .yellow-box {
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    .red-box {
+        background-color: crimson;
+        color: #fff;
+        padding: 20px;
+        margin: -15px;
+    }
+
+    .blue-box {
+        background-color: blue;
+        color: #fff;
+        padding: 20px;
+        margin: -15px;
+    }
+</style>
+
+<div class="box yellow-box">
+    <h5 class="box red-box">padding</h5>
+    <h5 class="box blue-box">padding</h5>
+</div>

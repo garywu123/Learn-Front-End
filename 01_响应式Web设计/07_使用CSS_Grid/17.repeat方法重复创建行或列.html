@@ -1,0 +1,42 @@
+<!-- 如果你要设计一个有100行的grid，你不可能定义100个 1fr 
+    因此你可以使用 repeat 功能，请看下面的实例：
+        grid-template-rows: repeat(100, 50px);
+        这代表了创建了100行50px高的grid
+    
+    也可以创建列：比如：
+        grid-template-columns: repeat(2, 1fr 50px) 20px;
+            This translates to:
+            grid-template-columns: 1fr 50px 1fr 50px 20px;
+    -->
+
+<style>
+    .item1{background:LightSkyBlue;}
+    .item2{background:LightSalmon;}
+    .item3{background:PaleTurquoise;}
+    .item4{background:LightPink;}
+    .item5{background:PaleGreen;}
+  
+    .container {
+      font-size: 40px;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      /* Only change code below this line */
+  
+      grid-template-columns: repeat(3, 1fr);
+  
+      /* Only change code above this line */
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+  </div>
+  
